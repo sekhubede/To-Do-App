@@ -30,5 +30,23 @@ namespace API.Controllers
 
             return task;
         }
+
+        [HttpPost] // https://localhost:5001/api/tasks
+        public async Task<ActionResult<App.Task>> CreateTask(App.Task task)
+        {
+            throw new NotImplementedException();
+        }
+
+        [HttpPut("{id}")] // https://localhost:5001/api/tasks/1
+        public async Task<ActionResult> UpdateTask(int id, App.Task task)
+        {
+            throw new NotImplementedException();
+        }
+
+        [HttpDelete("{id}")] // https://localhost:5001/api/tasks/1
+        public async Task<ActionResult> DeleteTask(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
